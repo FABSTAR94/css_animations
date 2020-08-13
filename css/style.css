@@ -137,4 +137,30 @@ background-image: url("https://i.pinimg.com/736x/c2/f5/3a/c2f53a269166e7526c2ccd
 }
 }
 
+/* reverse text */
+.reverse {
+  object-fit: cover;
+  background-image: url("https://i.pinimg.com/originals/42/d8/89/42d8894d18866ec8e7dcf79989e8c2f3.jpg");
+  backface-visibility:visible;
+  animation: turnimg 4s infinite linear alternate;
+  width: 100vh;
+  height: 500px;
+  margin-left: 250px;
+}
 
+.reverse2 h3 {
+  margin-top: 40px;
+  font-size: 30px;
+  color: purple;
+  backface-visibility:visible;
+  animation: turn 3s infinite linear alternate;
+  text-align: center;
+}
+
+@keyframes turnimg {
+  to {transform: rotateY(180deg);}
+}
+
+@keyframes turn {
+  to {transform: rotateY(180deg);}
+}
