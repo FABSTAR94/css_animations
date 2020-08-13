@@ -40,7 +40,8 @@ h1 {
 }
 
 @keyframes switch {
-  from {background-image: url("https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60")}
+  from {background-image: url("https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
+}
   to {
     background-image: url("https://images.unsplash.com/photo-1529522560205-b5aef3f46189?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60");
   }
@@ -56,12 +57,22 @@ h1 {
 
 /*spritesheet*/
 .back-img {
-  background-image: url("https://i.pinimg.com/originals/9f/cd/d8/9fcdd8d04a99478e465ad22156cc3e84.jpg");
-  background-repeat: no-repeat;
-  width: 100%;
+ background-image: url("https://i.pinimg.com/originals/9f/cd/d8/9fcdd8d04a99478e465ad22156cc3e84.jpg");
+ background-repeat: no-repeat;
+ width: 100%;
  height: 101vh;
  background-size: cover;
+/* animation: appear 15s infinite;*/
 }
+
+/*if u want to change the background image*/
+/*@keyframes appear {
+  0% {background-image: url("https://i.pinimg.com/originals/9f/cd/d8/9fcdd8d04a99478e465ad22156cc3e84.jpg");
+  }
+  100%{
+    background-image: url("https://cdn5.vectorstock.com/i/1000x1000/10/94/modern-night-city-landscape-background-vector-24261094.jpg");
+  }
+}*/
 
 #runner {
   background: url("http://pixelartmaker.com/art/687d3898039afaf.png");
@@ -91,3 +102,39 @@ h1 {
     transform: translateX(1000px);
   }
 }
+
+/*slideshow banner*/
+
+.animation-banner{
+  background-image: url("https://i.pinimg.com/originals/42/f0/de/42f0def0f6737c44a1deb7d9402aae55.jpg");
+  background-position:center;
+  background-color:#000;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 50% 40%;
+  width: 100%;
+  height: 100vh;
+  background-size:cover;
+  animation: bgfade 15s infinite;
+  margin-top: 100px;
+}
+
+@keyframes bgfade {
+0% {
+background-image: url("https://i.pinimg.com/originals/42/f0/de/42f0def0f6737c44a1deb7d9402aae55.jpg");
+}
+25% {
+background-image: url("https://www.kevintrowbridge.com/wp-content/uploads/2012/09/kelowna-creative-couples-portraits-motorcycle-vintage-orchard136_by-Kevin-Trowbridge_thumb.jpg");
+}
+50% {
+background-image: url("https://images.creativemarket.com/0.1.0/ps/2539954/1360/906/m1/fpnw/wm1/sl5f8d9wjvr3pc5glqgtxsqcbdmjr1yhqlk7qakjjysu4hwmzbzxuadhtpyvgzm0-.jpg?1492069084&s=66469b89fe5826596647bcda9bd3fa1c");
+}
+75% {
+background-image: url("https://i.pinimg.com/originals/d2/21/2e/d2212e2d3862f296eafd83bac42e08c5.jpg");
+}
+100% {
+background-image: url("https://i.pinimg.com/736x/c2/f5/3a/c2f53a269166e7526c2ccdbc09912fac.jpg");
+}
+}
+
+
