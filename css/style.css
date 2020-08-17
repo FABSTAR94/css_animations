@@ -96,10 +96,10 @@ h1 {
 
 @keyframes forward {
   0% {
-    transform: translateX(-50px);
+    transform: translateX(-75px);
   }
   100% {
-    transform: translateX(1000px);
+    transform: translateX(1300px);
   }
 }
 
@@ -182,7 +182,7 @@ background-image: url("https://i.pinimg.com/736x/c2/f5/3a/c2f53a269166e7526c2ccd
   animation-duration: 4s;
   animation-iteration-count: infinite;
 }
- 
+
 .circle2 {
   width: 100px;
   height: 100px;
